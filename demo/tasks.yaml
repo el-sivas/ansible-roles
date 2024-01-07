@@ -5,3 +5,17 @@
     action: "debug"
     args:
       msg: "hello world"
+      
+  - name: "debug a variable"
+    action: "debug"
+    args:
+      msg: "hello {{ my_var }}"
+  
+  - name: "debug a list variable"
+    # add a loop to iterate over the list
+    action: "debug"
+    args:
+      msg: "hello {{ item }}"
+    loop: "{{ my_list_var }}"
+
+  
