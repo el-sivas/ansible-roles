@@ -1,3 +1,6 @@
 - name: "demo"
-  description: "Demo task"
-  command: "echo 'Hello, world!'"
+  tasks:
+  - name: "debug"
+    action: "debug"
+    args:
+      msg: "hello world"
