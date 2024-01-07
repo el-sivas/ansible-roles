@@ -1,4 +1,5 @@
 - name: "demo"
+  hosts: all
   tasks:
   - name: "debug"
     action: "debug"
