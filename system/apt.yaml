@@ -1,0 +1,8 @@
+- name: "apt setup"
+  hosts: all
+  tasks:
+  - name: "apt"
+    ansible.builtin.apt:
+      name: "{{ item }}"
+      state: "present"
+    loop: "{{ apt_packages }}"
